@@ -1,0 +1,39 @@
+body {
+  background-color: #232323;
+
+}
+
+.sqr {
+  width: 30%;
+  background: purple;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 15px;
+}
+
+#container {
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 26px;
+
+}
+#statusBar {
+  width: auto;
+  background: white;
+  padding-bottom: 30px;
+}
+
+#message {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  padding: 0px;
+
+}
