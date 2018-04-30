@@ -1,0 +1,19 @@
+body {
+  background-color: orange;
+}
+
+div {
+  width: auto;
+  border: 4px #232323 solid;
+  background-color: 	#00FFFF;
+  margin: 5px;
+  padding: 5px;
+}
+
+#main {
+  text-align: center;
+}
+
+input {
+  margin: 3px;
+}

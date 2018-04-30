@@ -18,23 +18,28 @@ body {
 
 }
 
+.selected {
+  background: #4384f4;
+  
+}
+
 h1 {
   color: white;
   text-align: center;
-  
+
   font-size: 26px;
 
 }
-#statusBar {
-  width: auto;
-  background: white;
-  padding-bottom: 30px;
+#stripe {
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  color: black;
 }
 
 #message {
-  text-align: center;
+  /* text-align: center; */
   color: black;
   font-size: 18px;
   padding: 0px;
-
 }

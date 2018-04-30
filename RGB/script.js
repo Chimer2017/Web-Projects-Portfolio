@@ -1,12 +1,41 @@
-var colorList = generateRandColor(6);
+var numSrq = 6;
+var colorList = generateRandColor(numSrq);
 var sqrs = document.querySelectorAll(".sqr");
 var colorDisplay = document.querySelector("#colorDisplay");
 var message = document.querySelector("#message");
 var pickedColor = pickColor();
+var h1 = document.querySelector("h1");
+var reset = document.querySelector("#reset");
+var easy = document.querySelector("#easy");
+var hard = document.querySelector("#hard");
+
+easy.addEventListener("click", function(){
+  easy.classList.add("selected");
+  hard.classList.remove("selected");
+  numSrq = 3;
+  colorList = generateRandColor(3);
+  pickedColor = pickColor();
+  colorDisplay.textContent = pickedColor;
+  for (var i = 0; i < sqrs.length; i++)
+  {
+    if (colorList[i]) {
+      sqrs[i].style.backgroundColor = colorList[i];
+    } else {
+      sqrs[i].style.display = "none";
+
+    }
+  }
+});
+
+hard.addEventListener("click", function(){
+  easy.classList.remove("selected");
+  hard.classList.add("selected");
+  location.reload();
+});
+
 colorDisplay.textContent = pickedColor;
 
-for (var i = 0; i < sqrs.length; i++)
-{
+for (var i = 0; i < sqrs.length; i++){
 
   sqrs[i].style.backgroundColor = colorList[i];
   sqrs[i].addEventListener("click",function() {
@@ -15,6 +44,8 @@ for (var i = 0; i < sqrs.length; i++)
       {
         message.textContent = "Correct";
         changeColor(pickedColor);
+        h1.style.backgroundColor = pickedColor;
+        reset.textContent = "Play Again?"
       }
       else
       {
@@ -23,10 +54,6 @@ for (var i = 0; i < sqrs.length; i++)
       }
   });
 }
-
-
-
-
 function changeColor(color) {
   for (var i = 0; i < sqrs.length;i++)
   {
@@ -34,8 +61,6 @@ function changeColor(color) {
   }
 
 }
-
-
 function pickColor() {
   var randIndex = Math.floor(Math.random() * colorList.length);
   return colorList[randIndex];
@@ -48,7 +73,6 @@ function randColor() {
   return ("rgb(" + r + ", " + g + ", " + b + ")");
 
 }
-
 function generateRandColor(num) {
   var arr = [];
   for (var i = 0; i< num; i++)
@@ -58,3 +82,14 @@ function generateRandColor(num) {
   return arr;
 
 }
+reset.addEventListener("click", function(){
+  // colorList = generateRandColor(6);
+  // pickedColor = pickColor();
+  // colorDisplay.textContent = pickedColor;
+  // for (var i = 0; i < colorList.length; i++)
+  // {
+  //   sqrs[i].style.backgroundColor = colorList[i];
+  // }
+  location.reload();
+
+});
