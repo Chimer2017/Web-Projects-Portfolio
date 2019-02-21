@@ -1,0 +1,27 @@
+#card {
+  margin: auto;
+  background-color: black;
+  width: 500px;
+  padding: 10px;
+  border-radius: 15%;
+}
+
+#card img {
+  width: 70%;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+  border-radius: 15%;
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+.text {
+  color: white;
+  font-family: fantasy;
+  text-align: center;
+  font-size: 24px;
+}
