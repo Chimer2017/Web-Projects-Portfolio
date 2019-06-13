@@ -1,0 +1,46 @@
+body {
+    background-color: bisque;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    border: none;
+    background-color: beige;
+    width: auto;
+    font-size: 32px;
+    border-radius: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.q-lbl {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: coral;
+}
+
+input[type=radio] {
+    border: none;
+    color: brown;
+    width: 28px;
+}
+
+.question {
+    font-size: 42px;
+    color: brown;
+    font-stretch: 2px;
+    background-color: white;
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+.answers {
+    text-align: center;
+    margin: auto;
+}
