@@ -1,0 +1,14 @@
+include mixins/listitem.pug
+
+html
+    head
+        tite User List
+    body
+        h1 User List
+        div
+            ul
+                each user in usercollection
+                    +listitem(user.username,user.email)
+    
+
+

@@ -1,0 +1,8 @@
+block content
+    h1 New User Form
+    form(action="/newuser", method="post") 
+        label(for="username") Username:
+        input#username(type="text", name="username")
+        label(for="email") Email:
+        input#username(type="text", name="email")
+        input(type="submit", value="Submit")
