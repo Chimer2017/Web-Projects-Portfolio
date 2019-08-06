@@ -4,7 +4,6 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/rest_app');
 

@@ -1,0 +1,76 @@
+
+
+.wrapper {
+    padding: 0;
+}
+
+.topbar {
+    height: 80px;
+}
+
+#top1 {
+    background-color: rgb(202, 202, 202);
+    height: 80px;
+
+}
+
+#top2 {
+    background-color: bisque;
+    /* t,r,b,l */
+    height: 45px;
+}
+
+#nav {
+    background-color: aqua;
+
+}
+
+#data {
+    background-color: blue;
+
+}
+
+#coms {
+    background-color: blueviolet;
+}
+
+#org-img {
+    padding: 0;
+    height: 80px;
+    margin: 0 0 0 20px; 
+
+  
+}
+
+#search-input {
+    width: 400px;
+    display: inline-block;
+    margin: 0;
+    height: calc(1.5em + .75rem + 2px);
+}
+#search-btn button {
+    height: calc(1.5em + .75rem + 2px);
+    margin: 0;
+    color: white;
+    background-color: blue;
+}
+
+#search {
+    margin:auto;
+}
+
+#widgets {
+    padding-top: 20px;
+}
+
+#widgets p {
+    margin-top: 8px;
+
+}
+
+.wid {
+    margin: auto 3px;
+    vertical-align: center;
+
+}
+
